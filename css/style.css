@@ -90,6 +90,7 @@ section > .bundle{
             flex: 1;
             .pair{
                 font-family: 'Barlow', sans-serif;
+                font-weight: 400;
             }
         }
         .offers{
@@ -136,6 +137,7 @@ section > .bundle{
             flex: 1;
             .pair{
                 font-family: 'Barlow', sans-serif;
+                font-weight: 400;
             }
         }
         .strike{
