@@ -18,17 +18,17 @@ window.onload = function() {
                 
 
                 if (radio.value === 'onePair') {
-                    selectedProductPrize =  195.00;
+                    selectedProductPrize =  "DKK 195.00";
                 } else if (radio.value === 'secondPair') {
-                    selectedProductPrize =345.00;
+                    selectedProductPrize = "DKK 345.00";
                 }
                  else if (radio.value === 'ThirdPair') {
-                    selectedProductPrize =  528.00;
+                    selectedProductPrize =  "DKK 528.00";
                 }
             }
             
 
-            totalPrize.textContent = `Total Prize: ${selectedProductPrize.toFixed(2)}`;
+            totalPrize.textContent = `Total Prize: ${selectedProductPrize}`;
         });
         
         dropdown.addEventListener('click', function(event) {
