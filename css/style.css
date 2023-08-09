@@ -92,6 +92,10 @@ section > .bundle{
                 font-family: 'Barlow', sans-serif;
                 font-weight: 400;
             }
+            .amount{
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+            }
         }
         .offers{
             display: flex;
@@ -138,6 +142,10 @@ section > .bundle{
             .pair{
                 font-family: 'Barlow', sans-serif;
                 font-weight: 400;
+            }
+            .amount{
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
             }
         }
         .strike{
