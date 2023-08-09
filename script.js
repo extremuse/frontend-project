@@ -22,7 +22,7 @@ window.onload = function() {
                 } else if (radio.value === 'secondPair') {
                     selectedProductPrize = "DKK 345.00";
                 }
-                 else if (radio.value === 'ThirdPair') {
+                 else  {
                     selectedProductPrize =  "DKK 528.00";
                 }
             }
@@ -39,7 +39,7 @@ window.onload = function() {
             if (!radio.checked) {
                 dropdown.classList.remove('show-dropdown');
                 selectedProductPrize = 0;
-                totalPrize.textContent = `Total Prize: ${selectedProductPrize.toFixed(3)}`;
+                totalPrize.textContent = `Total Prize: ${selectedProductPrize}`;
             }
         });
     });
