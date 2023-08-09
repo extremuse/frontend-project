@@ -34,11 +34,17 @@ window.onload = function() {
         dropdown.addEventListener('click', function(event) {
             event.stopPropagation();
         });
-        
+        radio.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
         radio.addEventListener('change', function() {
             if (!radio.checked) {
                 dropdown.classList.remove('show-dropdown');
                 selectedProductPrize = 0;
+                totalPrize.textContent = `Total Prize: ${selectedProductPrize}`;
+            }
+            else{
+                dropdown.classList.add('show-dropdown');
                 totalPrize.textContent = `Total Prize: ${selectedProductPrize}`;
             }
         });
