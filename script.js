@@ -11,12 +11,12 @@ window.onload = function() {
             if (dropdown.classList.contains('show-dropdown')) {
                 dropdown.classList.remove('show-dropdown');
                 radio.checked = false;
-                selectedProductPrize = 0; // Reset the selected product's prize
+                selectedProductPrize = 0; 
             } else {
                 dropdown.classList.add('show-dropdown');
                 radio.checked = true;
                 
-                // Update the selected product's prize based on the clicked product
+
                 if (radio.value === 'onePair') {
                     selectedProductPrize =  195.00;
                 } else if (radio.value === 'secondPair') {
@@ -27,7 +27,7 @@ window.onload = function() {
                 }
             }
             
-            // Update the total prize display
+
             totalPrize.textContent = `Total Prize: ${selectedProductPrize.toFixed(2)}`;
         });
         
@@ -38,7 +38,7 @@ window.onload = function() {
         radio.addEventListener('change', function() {
             if (!radio.checked) {
                 dropdown.classList.remove('show-dropdown');
-                selectedProductPrize = 0; // Reset the selected product's prize
+                selectedProductPrize = 0;
                 totalPrize.textContent = `Total Prize: ${selectedProductPrize.toFixed(3)}`;
             }
         });
